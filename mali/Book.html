@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="Book.css">
+        <title>Book a Table | mali</title>
+    </head>
+    <body>
+        <!-- Same header as your index.html -->
+        <header>
+            <div class="container">
+                <div class="logo"><span><img src="/mali/images/MALI-removebg-preview.png" alt="logo" class="logo-img"></span></div>
+
+                <nav>
+                    <a href="Index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <!-- <div>
+                    <a href="book.html" class="btn">Book Table</a>
+                </div> -->
+            </div>
+        </header>
+
+        <!-- ✅ NEW: the reservation section -->
+        <section class="reserve">
+            <h1>Reserve A Table</h1>
+
+            <div class="reserve-box">
+
+                <!-- Left side: picture -->
+                <div class="reserve-img"></div>
+
+                <!-- Right side: the form -->
+                <form id="reserveForm" novalidate>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your full name">
+                    <p class="error"></p>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com">
+                    <p class="error"></p>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="08012345678">
+                    <p class="error"></p>
+
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="20" placeholder="e.g. 4">
+                    <p class="error"></p>
+
+                    <label for="datetime">Date and Time</label>
+                    <input type="datetime-local" id="datetime">
+                    <p class="error"></p>
+
+                    <label for="type">Reservation Type</label>
+                    <select id="type">
+                        <option value="">-- Choose one --</option>
+                        <option>Regular dining</option>
+                        <option>Birthday</option>
+                        <option>Anniversary</option>
+                        <option>Business meeting</option>
+                        <option>Private event</option>
+                    </select>
+                    <p class="error"></p>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <p id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <script src="shop.js"></script>
+        <script src="Book.js"></script>
+    </body>
+</html>

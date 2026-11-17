@@ -1,0 +1,94 @@
+body {
+   background-image:linear-gradient(rgba(0,0,0,0.5)),url(/mali/images/gallery.jpeg);
+    /* background-image:linear-gradient(rgba(0,0,0,0.5)),url(/MALI/images/background.jpeg); */
+    background-position: center right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 70px 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  /* font-family: Arial, sans-serif;
+  background: #6b1a14;
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
+  height: 100vh;
+  margin: 0; 
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  
+}
+
+.logo {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    justify-content:center;
+    /* gap: 15px; */
+    margin: 0%;
+}
+
+.logo img {
+    width: auto;
+    height: 90px;
+    justify-content: space-evenly;
+    /* margin-left: 50px; */
+}
+.logo h1 {
+  display: grid;
+  text-align: center;
+  margin-top: 0;
+  color: #7d0321;
+}
+.loGo {
+ display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    justify-content:center;
+    /* gap: 15px; */
+    margin: 0%;
+}
+.loGo-img{
+   width: auto;
+    height: 90px;
+    justify-content: space-evenly;
+}
+.loGo h1{
+  display: grid;
+  text-align: center;
+  margin-top: 0;
+  color: #7d0321;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #a0042a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7d0321;
+}
+
+#message {
+  text-align: center;
+  color: red;
+}

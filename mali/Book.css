@@ -1,0 +1,94 @@
+/* =====================================================
+   book.css - styles ONLY for the Reserve A Table page.
+   It uses the colours from shop.css (--btn-bg, --btn-text).
+   ===================================================== */
+
+.reserve {
+  padding: 40px 20px 60px;
+}
+
+.reserve h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: brown;
+}
+
+/* Two columns: picture on the left, form on the right */
+.reserve-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reserve-img {
+  min-height: 450px;
+  border-radius: 15px;
+  background: url("/mali/images/gallery.jpeg") center / cover no-repeat;
+}
+
+/* ----- The form ----- */
+#reserveForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+#reserveForm input,
+#reserveForm select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #f4f1e6;
+  border: 1px solid rgb(224, 199, 121);
+  border-radius: 6px;
+}
+
+#reserveForm input:focus,
+#reserveForm select:focus {
+  outline: none;
+  border-color: brown;
+  box-shadow: 0 0 0 3px rgba(165, 42, 42, .15);
+}
+
+/* Error text under each field (empty until something is wrong) */
+.error {
+  min-height: 18px;
+  margin: 3px 0 8px;
+  font-size: 13px;
+  color: #c62828;
+}
+.has-error {
+  border-color: #c62828 !important;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--btn-text);
+  background: var(--btn-bg);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: filter .15s;
+}
+.submit-btn:hover { filter: brightness(1.15); }
+
+#formMessage {
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: green;
+}
+
+/* ----- Phones and small tablets: stack the picture on top ----- */
+@media screen and (max-width: 768px) {
+  .reserve h1 { font-size: 32px; }
+  .reserve-box { grid-template-columns: 1fr; }
+  .reserve-img { min-height: 220px; }
+}
